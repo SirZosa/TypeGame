@@ -11,7 +11,7 @@ interface Props{
 export default function Menu({setDifficultys, setTimes, time, difficulty, accuracy, wpm, gameStarted}:Props){
     const [open, setOpen] = useState<boolean>(false);
     const [open1, setOpen1] = useState<boolean>(false);
-    const diff = difficulty == 0 ? "Any" : difficulty == 1 ? "Easy" : difficulty == 2 ? "Normal" : "Hard";
+    const diff = difficulty == 0 ? "Any" : difficulty == 1 ? "Easy" : difficulty == 2 ? "Normal" : difficulty == 3 ? "Very hard" : ">:C";
     
     
 
