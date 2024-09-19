@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import confetti from 'canvas-confetti'
+import confetti from "canvas-confetti";
 import Modal from "./modal";
 import Menu from "./menu";
   type word = {
@@ -28,7 +28,7 @@ export default function Game(): JSX.Element{
     const [difficulty, setDifficulty] = useState<number>(0);
     const [loading, setLoading] = useState<boolean>(false);
     const [confe, setConfe] = useState<boolean>(false);
-    const inputRef = useRef(null);
+    const inputRef = useRef<HTMLInputElement>(null);
 
 
     useEffect(() => {
